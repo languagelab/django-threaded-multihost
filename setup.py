@@ -1,6 +1,6 @@
 import ez_setup
 ez_setup.use_setuptools()
-from setuptools import setup, find_packages
+from setuptools import setup
 
 version = __import__('threaded_multihost').__version__
 
@@ -23,7 +23,6 @@ setup(
                    'Programming Language :: Python',
                    'Framework :: Django'],
     packages = ['threaded_multihost'],
-    #package_dir = {'':'threaded_multihost'},
     include_package_data = False,
     setup_requires = ["setuptools_hg"],
 )
